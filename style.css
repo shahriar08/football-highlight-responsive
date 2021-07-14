@@ -54,6 +54,7 @@ nav img{
 }
 .title{
     padding: 3px;
+    margin-bottom: 19px;
 } 
 .header-title{
     font-size: 64px;
@@ -122,7 +123,7 @@ nav img{
 /* Highlight Section  */
 
 .section-title{
-    color: #f50792;
+    color: #2d25a0;
     font-size: 40px; 
 }
 
@@ -131,6 +132,7 @@ nav img{
     flex-direction: column;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
     padding: 15px;
+    align-items: center;;
 }
 .highlight img{
     width: 300px;
@@ -145,12 +147,14 @@ nav img{
 }
 
 .highlight-section{
-    margin-bottom: 150px;
+    margin-bottom: 90px;
 }
 
 .highlights-title{
     font-weight: 600;
     text-align: justify;
+    padding: 0 7px;
+
 }
 
 
@@ -159,26 +163,34 @@ nav img{
 .more-news{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 34px;
+    grid-row-gap: 24px;
+    padding-bottom: 40px;
 }
 
-.new{
+.news{
     display: flex;
-    flex-direction: row;
+    /* flex-direction: row; */
 }
-.news-image img{
+.news img{
     width: 224px;
-    height: 104px;
+    height: 120px;
 }
 .news-detail{
     margin-left: 16px;
 }
-
+.news-title{
+    font-weight: 550;
+    text-align: justify;
+    padding: 0 10px;
+}
 /* Footer Start  */
 
 .footer{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
 }
 
 .img-footer img{
@@ -190,14 +202,23 @@ nav img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 20px;
 }
 
-.social-logo fab{
-    width: 640px;
-    height: 640px;
+.logo{
     border-radius: 50%;
+    font-size: 30px;
+    padding: 10px 10px;
+    margin: 7px;
+    color: #969BAB;
+    background-color: #E7E7E8;
 }
 
+.copyright{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+}
 
 
 /* Responsive mobile  */
@@ -212,7 +233,7 @@ nav img{
         display: block;
     }
 
-    .players,.highlights, .more-sports{
+    .players,.highlights, .more-news{
         grid-template-columns: repeat(1, 1fr);
 
     }
@@ -222,4 +243,20 @@ nav img{
         display: flex;
         align-items: center;
     }
+    .highlight{
+        align-items: center;
+    }
 } 
+
+
+
+/* tablet Devices  */
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+
+    .players,.highlights, .more-news{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

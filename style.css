@@ -133,6 +133,22 @@ main {
   padding: 0 7px;
 }
 
+
+.match-title{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-top: 80px;
+
+}
+.iframe-container{
+    width: 567px;
+    height: 427px;
+    margin-top: 80px;
+    padding-left: 200px;
+}
+
+
 /* More News */
 
 .more-news {
@@ -203,7 +219,7 @@ main {
     display: block;
     font-size: 36px;
     line-height: 50px;
-    margin-top: 98px;
+    margin-top: 50px;
     margin-left: 16px;
     margin-right: 66px;
   }
@@ -243,6 +259,31 @@ main {
     color: #969bab;
     background-color: #e7e7e8;
   }
+
+
+.match-title{
+    display: block;
+    font-size: 36px;
+    line-height: 50px;
+    margin-top: 98px;
+    margin-left: 16px;
+    margin-right: 66px;
+
+}
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 450px;
+    height: 260px;
+  }
 }
 
 
@@ -256,5 +297,51 @@ main {
   .highlights,
   .more-news {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+.header{
+    display: flex;
+}
+  .header,
+  .header-title {
+    display: block;
+    font-size: 26px;
+    line-height: 50px;
+    margin-top: 0;
+    margin-left: 26px;
+    margin-bottom: 40px;
+    margin-right: 66px;
+  }
+  .header-img img {
+    position: absolute;
+    width: 329px;
+    height: 260px;
+    margin-top: 50px;
+    right: 0;
+    top: 0;
+    /* margin-top: 50px;
+    margin-left: 24px; */
+    margin-bottom: 150px;
+    
+  }
+  .watch-btn{
+      font-size: 15px;
+    padding: 10px 16px;
+}
+
+  .iframe-container{
+
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    align-items: center;
+    width: 700px;
+    height: 460px;
   }
 }
